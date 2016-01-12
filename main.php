@@ -10,7 +10,7 @@
 # ...
 # ...
 # function user_new
-# ... not completed
+#  done
 # function over
 
 ?>
