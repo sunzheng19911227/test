@@ -28,7 +28,9 @@ if (!$result) {
 }
 //echo $result;
 //$ss = '<h2 class="zm-list-content-title"><a data-tip="p$t$wu-zi-yu-82" href="https://www.zhihu.com/people/wu-zi-yu" class="zg-link" title="吾自虞">吾自虞</a></h2>';
-preg_match_all('/<a\s*.*href\s*=\s*"https:\/\/www.zhihu.com\/[a-zA-Z]+\/([\-a-zA-Z0-9]+)"\s*.*>.*<\/a>/',$result,$tt);
+//preg_match_all('#<a\s*.*href\s*=\s*"https:\/\/www.zhihu.com\/[a-zA-Z]+\/([\-a-zA-Z0-9]+)"\s*.*>.*<\/a>#',$result,$tt);
+//preg_match_all('#<h2 class="zm-list-content-title"><a data-tip=".*?" href="https://www.zhihu.com/people/(.*?)" class="zg-link" title="(.*?)">#', $result, $tt);
+preg_match_all('/<a\s*.*href\s*=\"https:\/\/www.zhihu.com\/[a-zA-Z]+\/(.*?)\"/',$result,$tt);
 var_dump($tt);
 
 ?> 
